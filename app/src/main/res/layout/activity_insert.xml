@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/sefid"
+    tools:context=".InsertActivity">
+
+    <EditText
+        android:id="@+id/et_InsertActivity_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/sefid"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="عنوان"
+        android:inputType="textPersonName"
+        android:padding="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_InsertActivity_cancel" />
+
+    <EditText
+        android:id="@+id/et_InsertActivity_des"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/sefid"
+        android:ems="10"
+        android:gravity="start"
+        android:hint="توضیحات"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_InsertActivity_title" />
+
+    <ImageView
+        android:id="@+id/b_InsertActivity_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_round_check_24" />
+
+    <ImageView
+        android:id="@+id/b_InsertActivity_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_round_arrow_back_ios_24" />
+
+    <ImageView
+        android:id="@+id/iv_Insert_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/et_InsertActivity_title"
+        app:layout_constraintEnd_toStartOf="@+id/b_InsertActivity_save"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_round_star_border_24" />
+
+    <ImageView
+        android:id="@+id/iv_Insert_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/et_InsertActivity_title"
+        app:layout_constraintEnd_toStartOf="@+id/iv_Insert_star"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_delete_24" />
+</androidx.constraintlayout.widget.ConstraintLayout>
