@@ -60,10 +60,10 @@ public class InsertActivity extends AppCompatActivity {
                 }
                 b_delete.setVisibility(View.VISIBLE);
 
-                Toast.makeText(this, "         اینجا قرار است که آپدیت اتفاق بیوفتد         " + s, Toast.LENGTH_SHORT).show();
+       //         Toast.makeText(this, "         اینجا قرار است که آپدیت اتفاق بیوفتد         " + s, Toast.LENGTH_SHORT).show();
             } else {
 
-                Toast.makeText(this, "         اینجا قرار است که اضافه کردن اتفاق بیوفتد         " + s, Toast.LENGTH_SHORT).show();
+           //     Toast.makeText(this, "         اینجا قرار است که اضافه کردن اتفاق بیوفتد         " + s, Toast.LENGTH_SHORT).show();
             }
         }
 
